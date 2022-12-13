@@ -59,10 +59,6 @@ button {
     background-color: white;
 }
 
-button:hover {
-    background-color: #22A39F;
-}
-
 .icon-search {
     display: flex;
     align-items: center;
@@ -219,10 +215,21 @@ a:hover {
     /* border-bottom-color: #460C68; */
 }
 
-.crew {
+.span {
     letter-spacing: 2px;
 }
 
-span {
+.fb-icon:hover {
+    border-color: 2px solid blue;
+}
+
+.logo h1::before {
+    content: 'Crew';
+    border-bottom: 2px solid #460C68;
+    /* border-left: 2px solid black; */
+    border-radius: 2px;
+    width: 10px;
     color: #460C68;
+    letter-spacing: 0.2rem;
+    font-family: 'Rubik Vinyl', cursive;
 }

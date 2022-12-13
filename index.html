@@ -13,15 +13,20 @@
 <body>
     <!-- Top Portion of the Webpage -->
     <header class="top">
-
         <div class="logo">
-            <h1 class="crew"><mark class="bluee">Crew</mark>News</h1>
+            <h1>News</h1>
         </div>
         <div class="logo-search">
             <div class="logos">
-                <img src="/images/facebook.png" alt="facebook">
-                <img src="/images/discord.png" alt="discord">
-                <img src="/images/twitter.png" alt="">
+                <a href="https://facebook.com" target="_blank">
+                    <img src="/images/blackfacebook.png" class="fb" onmouseover="this.src='/images/bluefacebook.png'" onmouseout="this.src='/images/blackfacebook.png'" alt="">
+                </a>
+                <a href="https://discord.com">
+                    <img src="/images/discord.png" onmouseout="this.src='/images/discord.png'" onmouseover="this.src='/images/bluediscord.png'" alt="discord">
+                </a>
+                <a href="https://twitter.com">
+                    <img src="/images/twitter.png" onmouseover="this.src='/images/bluetwitter.png'" onmouseout="this.src='/images/twitter.png'">
+                </a>
             </div>
             <div class="search-bar">
                 <input type="text" placeholder="search" class="search">
@@ -78,8 +83,8 @@
             </div>
             <div class="box-2">
                 <div class="text">
-                    <h4>EDITOR'S PICK</h4>
-                    <!-- <br> -->
+                    <h4>Editor's Pick</h4>
+                    <br>
                     <h1>Deliver What they Need!</h1>
                     <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tenetur quidem sapiente
                     </p>
@@ -95,7 +100,7 @@
 
     <!-- start of the trending section -->
     <div class="trending">
-        <h1 style="text-align: center;" class="textTitle-trending">Editor's Pick</h1>
+        <h1 style="text-align: center;" class="textTitle-trending">Popular</h1>
         <br><br>
         <div class="cards">
             <div class="card-1">
@@ -133,7 +138,9 @@
         </div>
     </div>
 
-
+    <!-- for javascript linking -->
+    <script src="index.js">
+    </script>
 
 </body>
 
