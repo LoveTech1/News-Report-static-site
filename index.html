@@ -5,15 +5,16 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css" />
     <title>News Portal</title>
 </head>
 
 <body>
     <!-- Top Portion of the Webpage -->
     <header class="top">
+        <!-- <img src="/images/logoo.svg" class="lg" width="100px;" alt=""> -->
         <div class="logo">
             <h1>News</h1>
         </div>
@@ -37,7 +38,8 @@
                     </span>
                 </button>
                 <div class="sidebar-toggle">
-                    <img src="/images/menu.png" alt="">
+                    <!-- <img src="/images/menu.png" alt=""> -->
+                    <i class="fa-sharp fa-solid fa-bars burger-img"></i>
                 </div>
             </div>
 
@@ -111,29 +113,42 @@
 
     <!-- start of the slider section -->
     <section class="slider">
-        <div class="contents">
-            <div class="box-1">
-                <img src="/images/landscape.jpg" class="land-img" alt="landscape">
+        <h1 class="slider-title"></h1>
+        <br>
+        <br>
+        <div class="carousel">
+            <button class="carousel-btn prev-btn is-hidden">
+                <img src="/images/left-arrow.png" alt="">
+            </button>
+            <div class="carousel-track_container">
+                <ul class="carousel__track">
+                    <li class="carousel_slide current-slider">
+                        <img class="carousel__images" src="/images/new-1.jpg" alt="">
+                    </li>
+                    <li class="carousel_slide">
+                        <img class="carousel__images" src="/images/new-2.jpg" alt="">
+                    </li>
+                    <li class="carousel_slide">
+                        <img class="carousel__images" src="/images/new-5.jpg" alt="">
+                    </li>
+                </ul>
             </div>
-            <div class="box-2">
-                <div class="text">
-                    <h4>Editor's Pick</h4>
-                    <br>
-                    <h1>Deliver What they Need!</h1>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tenetur quidem sapiente
-                    </p>
-                    <p>
-                        fuga iure aperiam repellat doloribus rem reiciendis vero qui odit in perspiciatis, eveniet aliquid.
-                    </p>
-                    <br>
-                </div>
+            <button class="carousel-btn next-btn">
+                <img src="/images/right-arrow.png" alt="">
+            </button>
+            <div class="carousel__nav">
+                <button class="carousel__indicator current-slide"></button>
+                <button class="carousel__indicator"></button>
+                <button class="carousel__indicator"></button>
             </div>
         </div>
+
+
     </section>
     <!-- end of the slider section -->
 
     <!-- start of the trending section -->
-    <section class="trending">
+    <section class=" trending">
         <h1 class="textTitle-trending">Popular</h1>
         <br><br>
         <div class="cards">
@@ -229,6 +244,7 @@
             </article>
 
         </div>
+
         <!-- Another container  -->
         <div class="another-grid-container">
             <br>
@@ -265,8 +281,74 @@
         </div>
     </section>
 
+    <!-- for footer section -->
+    <footer class="footer-section">
+        <div class="items first-item">
+            <br>
+            <br>
+            <div class="content">
+                <h1 style="color: white;">CrewNews</h1>
+                <br>
+                <p style="color: white;" class="content-para">We believe in delivering quality content to uphold justice in the society and country. Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem obcaecati corrupti culpa nobis, temporibus delectus
+                </p>
+            </div>
+        </div>
+
+        <div class="items second-item ">
+            <br>
+            <br>
+            <div class="content">
+                <h1 style="color: white;">Contact Info</h1>
+                <br>
+                <p class="content-para">Lainchaur, kathmandu</p>
+                <p class="content-para">HanumanDhoka Tole</p>
+                <p class="content-para">Number 38282910</p>
+                <p class="content-para">Tel:01-435848, 01-382910</p>
+                <p class="content-para">Phone number 9847758282</p>
+            </div>
+        </div>
+        <div class="items third-item ">
+            <br>
+            <div class="content">
+                <br>
+                <h1 style="color: white;">Important Link</h1>
+                <br>
+                <p class="content-para">Home</p>
+                <br>
+                <p class="content-para">Contact</p>
+                <br>
+                <p class="content-para">Health</p>
+                <br>
+                <p class="content-para">About</p>
+                <br>
+                <p class="content-para">Sports</p>
+            </div>
+        </div>
+        <div class="items fourth-item ">
+            <br>
+            <div class="content">
+                <br>
+                <h1 style="color: white;">Support</h1>
+                <br>
+                <p class="content-para">Lorem ipsum dolor sit amet.</p>
+                <p class="content-para">Lorem ipsum dolor sit amet.</p>
+                <p class="content-para">Lorem ipsum dolor sit amet.</p>
+            </div>
+        </div>
+        <div class="items fifth-item ">
+            <div class="img-container">
+                <img src="/images/bluetwitter.png" alt="">
+                <img src="/images/bluediscord.png" alt="">
+                <img src="/images/bluefacebook.png" alt="">
+            </div>
+        </div>
+    </footer>
+    <!-- end of footer section -->
+
+    <!-- for font-awesome -->
+    <script src="https://kit.fontawesome.com/adae769a6b.js" crossorigin="anonymous"></script>
     <!-- for javascript linking -->
-    <script src="index.js">
+    <script src="index.js ">
     </script>
 
 </body>
