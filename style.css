@@ -273,13 +273,6 @@ a:hover {
     position: relative;
 }
 
-
-/* .textTitle-trending:hover {
-    color: #460C68;
-    transition: 0.2s ease-in-out;
-   
-} */
-
 .textTitle-trending::before {
     content: "";
     background: #460C68;
@@ -297,7 +290,7 @@ a:hover {
     border-color: 2px solid blue;
 }
 
-.logo h1::before {
+.news-h1::before {
     content: 'Crew';
     border-bottom: 2px solid #460C68;
     /* border-left: 2px solid black; */
