@@ -13,274 +13,390 @@
 
 <body>
     <!-- Top Portion of the Webpage -->
-    <header class="top">
-        <!-- <img src="/images/logoo.svg" class="lg" width="100px;" alt=""> -->
-        <div class="logo">
-            <h1 class="news-h1">News</h1>
-        </div>
-
-        <div class="logo-search">
-            <div class="logos">
-                <a href="https://facebook.com" target="_blank">
-                    <img src="/images/blackfacebook.png" class="fb" onmouseover="this.src='/images/bluefacebook.png'" onmouseout="this.src='/images/blackfacebook.png'" alt="">
-                </a>
-                <a href="https://discord.com">
-                    <img src="/images/discord.png" onmouseout="this.src='/images/discord.png'" onmouseover="this.src='/images/bluediscord.png'" alt="discord">
-                </a>
-                <a href="https://twitter.com">
-                    <img src="/images/twitter.png" onmouseover="this.src='/images/bluetwitter.png'" onmouseout="this.src='/images/twitter.png'">
-                </a>
+    <main class="whole-container">
+        <header class="top">
+            <!-- <img src="/images/logoo.svg" class="lg" width="100px;" alt=""> -->
+            <div class="logo">
+                <h1 class="news-h1">News</h1>
             </div>
-            <div class="search-bar">
-                <input type="text" placeholder="search" class="search">
-                <button type="submit">
-                    <span class="icon-search">
-                        <img src="/images/search.png" alt="Search">
-                    </span>
-                </button>
-                <div class="sidebar-toggle">
-                    <!-- <img src="/images/menu.png" alt=""> -->
-                    <i class="fa-sharp fa-solid fa-bars burger-img"></i>
+            <div class="weather-widget">
+                <div class="weather-widget__conditions">
+                    <img src="/images/sunny.png" alt="">
+                    <h1 class="sunny">71F, Kathmandu</h1>
                 </div>
+
             </div>
 
-        </div>
 
+            <div class="logo-search">
+                <div class="logos">
+                    <a href="https://facebook.com" target="_blank">
+                        <img src="/images/blackfacebook.png" class="fb" onmouseover="this.src='/images/bluefacebook.png'" onmouseout="this.src='/images/blackfacebook.png'" alt="">
+                    </a>
+                    <a href="https://discord.com">
+                        <img src="/images/discord.png" onmouseout="this.src='/images/discord.png'" onmouseover="this.src='/images/bluediscord.png'" alt="discord">
+                    </a>
+                    <a href="https://twitter.com">
+                        <img src="/images/twitter.png" onmouseover="this.src='/images/bluetwitter.png'" onmouseout="this.src='/images/twitter.png'">
+                    </a>
+                </div>
+                <div class="search-bar">
+                    <input type="text" placeholder="search" class="search">
+                    <button type="submit">
+                        <span class="icon-search">
+                            <img src="/images/search.png" alt="Search">
+                        </span>
+                    </button>
+                    <div class="sidebar-toggle">
+                        <!-- <img src="/images/menu.png" alt=""> -->
+                        <i class="fa-sharp fa-solid fa-bars burger-img"></i>
+                    </div>
+                </div>
 
-        <!-- for sidebar -->
-
-        <aside class="sidebar">
-            <div class="sidebar-header">
-                <!-- <img src="/images/menu.png" class="logo" alt="" /> -->
-                <button class="close-btn"><i class="fas fa-times"></i></button>
             </div>
-            <!-- links -->
-            <ul class="links">
+
+
+            <!-- for sidebar -->
+
+            <aside class="sidebar">
+                <div class="sidebar-header">
+                    <!-- <img src="/images/menu.png" class="logo" alt="" /> -->
+                    <button class="close-btn"><i class="fas fa-times"></i></button>
+                </div>
+                <!-- links -->
+                <ul class="links">
+                    <li class="nav-list">
+                        <a href="#">home</a>
+                    </li>
+                    <li class="nav-list">
+                        <a href="#">Business</a>
+                    </li>
+                    <li class="nav-list">
+                        <a href="#">Categories</a>
+                    </li>
+                    <li class="nav-list">
+                        <a href="#">Sports</a>
+                    </li>
+                    <li class="nav-list">
+                        <a href="contact.html" target="_blank">Contact</a>
+                    </li>
+                </ul>
+            </aside>
+            <!-- endo of sidebar -->
+
+        </header>
+        <!-- End of top portion -->
+        <!-- start of nav-bar -->
+        <nav class="nav-bar">
+            <ul class="ul-container">
                 <li class="nav-list">
-                    <a href="#">home</a>
+                    <a href="">Home</a>
                 </li>
+
+
                 <li class="nav-list">
-                    <a href="#">Business</a>
+                    <a href="#business" class="business">Business</a>
                 </li>
+
+
                 <li class="nav-list">
-                    <a href="#">Categories</a>
+                    <a href="">Categories</a>
                 </li>
+
+
                 <li class="nav-list">
-                    <a href="#">Sports</a>
+                    <a href="">Sports</a>
                 </li>
+
+
+                <li class="nav-list">
+                    <a href="">Health</a>
+                </li>
+
+
                 <li class="nav-list">
                     <a href="contact.html" target="_blank">Contact</a>
                 </li>
             </ul>
-        </aside>
-        <!-- endo of sidebar -->
+        </nav>
+        <!-- end of navbar -->
 
-    </header>
-    <!-- End of top portion -->
-    <!-- start of nav-bar -->
-    <nav class="nav-bar">
-        <ul class="ul-container">
-            <li class="nav-list">
-                <a href="">Home</a>
-            </li>
-
-
-            <li class="nav-list">
-                <a href="">Business</a>
-            </li>
-
-
-            <li class="nav-list">
-                <a href="">Categories</a>
-            </li>
-
-
-            <li class="nav-list">
-                <a href="">Sports</a>
-            </li>
-
-
-            <li class="nav-list">
-                <a href="">Health</a>
-            </li>
-
-
-            <li class="nav-list">
-                <a href="contact.html" target="_blank">Contact</a>
-            </li>
-        </ul>
-    </nav>
-    <!-- end of navbar -->
-
-    <!-- start of the slider section -->
-    <section class="slider">
-        <h1 class="slider-title"></h1>
-        <br>
-        <br>
-        <div class="carousel">
-            <button class="carousel-btn prev-btn is-hidden">
-                <img src="/images/left-arrow.png" alt="">
-            </button>
-            <div class="carousel-track_container">
-                <ul class="carousel__track">
-                    <li class="carousel_slide current-slider">
-                        <img class="carousel__images" src="/images/new4.jpg" alt="">
-                    </li>
-                    <li class="carousel_slide">
-                        <img class="carousel__images" src="/images/new-2.jpg" alt="">
-                    </li>
-                    <li class="carousel_slide">
-                        <img class="carousel__images" src="/images/new-5.jpg" alt="">
-                    </li>
-                </ul>
+        <!-- start of the slider section -->
+        <section class="slider">
+            <div class="banner">
+                <h1 class="slider-title">1. Terrorist Attack</h1>
+                <h1 class="slider-title">2. Share Market on deficit</h1>
+                <h1 class="slider-title">3. Women claims husband propery on divorce</h1>
+                <h1 class="slider-title">4. Gold price hike</h1>
             </div>
-            <button class="carousel-btn next-btn">
-                <img src="/images/right-arrow.png" alt="">
-            </button>
-            <div class="carousel__nav">
-                <button class="carousel__indicator current-slide"></button>
-                <button class="carousel__indicator"></button>
-                <button class="carousel__indicator"></button>
-            </div>
-        </div>
-
-
-    </section>
-    <!-- end of the slider section -->
-
-    <!-- start of the trending section -->
-    <section class=" trending">
-        <h1 class="textTitle-trending">Popular</h1>
-        <br><br>
-        <div class="cards">
-
-            <article class="card-1">
-                <div class="image">
-                    <img src="/images/news1.jpg" class="img-card" alt="">
-                </div>
-
-                <div class="description-img ">
-                    <br>
-                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Earum modi distinctio odit rem libero vero. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Natus asperiores consequuntur voluptates eligendi possimus neque.
-                    </p>
-                </div>
-            </article>
-
-            <article class="card-2">
-                <div class="image">
-                    <img src="/images/news2.jpg" class="img-card" alt="">
-                </div>
-                <div class="description-img">
-                    <br>
-                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Earum modi distinctio odit rem libero vero. Lorem ipsum dolor sit amet consectetur adipisicing elit. Error, ex?
-                    </p>
-                </div>
-            </article>
-
-            <article class="card-3">
-                <div class="image">
-                    <img src="/images/news3.jpg" class="img-card" alt="">
-                </div>
-
-                <div class="description-img">
-                    <br>
-                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. <br> Earum modi distinctio odit rem libero vero.
-                    </p>
-                </div>
-            </article>
-        </div>
-    </section>
-
-    <!-- For Must see section -->
-    <br>
-    <br>
-    <h1 class="textTitle-Mustsee">MustSee</h1>
-    <br><br>
-    <section class="MustSee">
-        <br>
-        <div class="grid-container">
-            <article class="grid-child item-1">
-                <div class="image-container">
-                    <img src="/images/new-1.jpg" class="img-grid" alt="">
-                </div>
-                <div class="image-description">
-                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quibusdam ut obcaecati ipsum maxime quod. Quo pariatur quis ex debitis illo.</p>
-                </div>
-            </article>
-
-            <article class="grid-child item-2">
-                <div class="image-container">
-                    <img src="/images//new-2.jpg" class="img-grid" alt="">
-                </div>
-                <div class="image-description">
-                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quibusdam ut obcaecati ipsum maxime quod. Quo pariatur quis ex debitis illo.</p>
-                </div>
-            </article>
-
-            <article class="grid-child item-3">
-                <div class="image-container">
-                    <img src="/images/new-3.jpg" class="img-grid" alt="">
-                </div>
-                <div class="image-description">
-                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quibusdam ut obcaecati <br> ipsum maxime quod. Quo pariatur quis ex debitis illo.</p>
-                </div>
-            </article>
-
-            <div class="grid-child item-4">
-                <div class="image-container">
-                    <img src="/images//new4.jpg" class="img-grid" alt="">
-                </div>
-                <div class="image-description">
-                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quibusdam ut obcaecati ipsum maxime quod. Quo pariatur quis ex debitis illo.</p>
-                </div>
-            </div>
-
-            <article class="grid-child item-5">
-                <div class="image-container">
-                    <img src="/images/new-5.jpg" class="img-grid" alt="">
-                </div>
-                <div class="image-description">
-                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quibusdam ut obcaecati ipsum maxime quod. Quo pariatur quis ex debitis illo.</p>
-                </div>
-            </article>
-
-        </div>
-
-        <!-- Another container  -->
-        <div class="another-grid-container">
             <br>
-            <div class="child-item child-item-1">
-                <div class="img-img">
-                    <img src="/images/news1.jpg" class="image-MustSection" alt="">
+            <br>
+            <div class="carousel">
+                <button class="carousel-btn prev-btn is-hidden">
+                    <img src="/images/left-arrow.png" alt="">
+                </button>
+                <div class="carousel-track_container">
+                    <ul class="carousel__track">
+                        <li class="carousel_slide current-slider">
+                            <img class="carousel__images" src="/images/new4.jpg" alt="">
+                        </li>
+                        <li class="carousel_slide">
+                            <img class="carousel__images" src="/images/new-2.jpg" alt="">
+                        </li>
+                        <li class="carousel_slide">
+                            <img class="carousel__images" src="/images/new-5.jpg" alt="">
+                        </li>
+                    </ul>
                 </div>
-                <p>Lorem ipsum dolor sit amet.dfd <br> Lorem ipsum dolor sit amet.</p>
-            </div>
-            <div class="child-item child-item-2">
-                <div class="img-img">
-                    <img src="/images/new-1.jpg" class="image-MustSection" alt="">
+                <button class="carousel-btn next-btn">
+                    <img src="/images/right-arrow.png" alt="">
+                </button>
+                <div class="carousel__nav">
+                    <button class="carousel__indicator current-slide"></button>
+                    <button class="carousel__indicator"></button>
+                    <button class="carousel__indicator"></button>
                 </div>
-                <p>Lorem ipsum dolor sit amet.dfd <br> Lorem ipsum dolor sit amet.</p>
             </div>
-            <div class="child-item child-item-3">
-                <div class="img-img">
-                    <img src="/images/new-3.jpg" class="image-MustSection" alt="">
+
+
+        </section>
+        <!-- end of the slider section -->
+
+        <!-- start of the trending section -->
+        <section class=" trending">
+            <h1 class="textTitle-trending">Popular</h1>
+            <br><br>
+            <div class="cards">
+
+                <article class="card-1">
+                    <div class="image">
+                        <img src="/images/news1.jpg" class="img-card" alt="">
+                    </div>
+
+                    <div class="description-img ">
+                        <br>
+                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Earum modi distinctio odit rem libero vero. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Natus asperiores consequuntur voluptates eligendi possimus neque.
+                        </p>
+                    </div>
+                </article>
+
+                <article class="card-2">
+                    <div class="image">
+                        <img src="/images/news2.jpg" class="img-card" alt="">
+                    </div>
+                    <div class="description-img">
+                        <br>
+                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Earum modi distinctio odit rem libero vero. Lorem ipsum dolor sit amet consectetur adipisicing elit. Error, ex?
+                        </p>
+                    </div>
+                </article>
+
+                <article class="card-3">
+                    <div class="image">
+                        <img src="/images/news3.jpg" class="img-card" alt="">
+                    </div>
+
+                    <div class="description-img">
+                        <br>
+                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. <br> Earum modi distinctio odit rem libero vero.
+                        </p>
+                    </div>
+                </article>
+
+                <article class="card-4">
+                    <div class="image">
+                        <img src="/images/news1.jpg" class="img-card" alt="">
+                    </div>
+
+                    <div class="description-img">
+                        <br>
+                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. <br> Earum modi distinctio odit rem libero vero.
+                        </p>
+                    </div>
+                </article>
+            </div>
+        </section>
+
+        <!-- For Must see section -->
+        <br>
+        <br>
+        <h1 class="textTitle-Mustsee">MustSee</h1>
+        <br><br>
+        <section class="MustSee">
+            <br>
+            <div class="grid-container">
+                <article class="grid-child item-1">
+                    <div class="image-container">
+                        <img src="/images/new-1.jpg" class="img-grid" alt="">
+                    </div>
+                    <div class="image-description">
+                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quibusdam ut obcaecati ipsum maxime quod. Quo pariatur quis ex debitis illo.</p>
+                    </div>
+                </article>
+
+                <article class="grid-child item-2">
+                    <div class="image-container">
+                        <img src="/images//new-2.jpg" class="img-grid" alt="">
+                    </div>
+                    <div class="image-description">
+                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quibusdam ut obcaecati ipsum maxime quod. Quo pariatur quis ex debitis illo.</p>
+                    </div>
+                </article>
+
+                <article class="grid-child item-3">
+                    <div class="image-container">
+                        <img src="/images/new-3.jpg" class="img-grid" alt="">
+                    </div>
+                    <div class="image-description">
+                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quibusdam ut obcaecati <br> ipsum maxime quod. Quo pariatur quis ex debitis illo.</p>
+                    </div>
+                </article>
+
+                <div class="grid-child item-4">
+                    <div class="image-container">
+                        <img src="/images//new4.jpg" class="img-grid" alt="">
+                    </div>
+                    <div class="image-description">
+                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quibusdam ut obcaecati ipsum maxime quod. Quo pariatur quis ex debitis illo.</p>
+                    </div>
                 </div>
-                <p>Lorem ipsum dolor sit amet.dfd <br> Lorem ipsum dolor sit amet.</p>
+
+                <article class="grid-child item-5">
+                    <div class="image-container">
+                        <img src="/images/new-5.jpg" class="img-grid" alt="">
+                    </div>
+                    <div class="image-description">
+                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quibusdam ut obcaecati ipsum maxime quod. Quo pariatur quis ex debitis illo.</p>
+                    </div>
+                </article>
+
             </div>
-            <div class="child-item child-item-4">
-                <div class="img-img">
-                    <img src="/images/new-5.jpg" class="image-MustSection" alt="">
+
+            <!-- Another container  -->
+            <div class="another-grid-container">
+                <br>
+                <div class="child-item child-item-1">
+                    <div class="img-img">
+                        <img src="/images/news1.jpg" class="image-MustSection" alt="">
+                    </div>
+                    <p>Lorem ipsum dolor sit amet.dfd <br> Lorem ipsum dolor sit amet.</p>
                 </div>
-                <p>Lorem ipsum dolor sit amet.dfd <br> Lorem ipsum dolor sit amet.</p>
-            </div>
-            <div class="child-item child-item-5">
-                <div class="img-img">
-                    <img src="/images/new-2.jpg" class="image-MustSection" alt="">
+                <div class="child-item child-item-2">
+                    <div class="img-img">
+                        <img src="/images/new-1.jpg" class="image-MustSection" alt="">
+                    </div>
+                    <p>Lorem ipsum dolor sit amet.dfd <br> Lorem ipsum dolor sit amet.</p>
                 </div>
-                <p>Lorem ipsum dolor sit amet.dfd <br> Lorem ipsum dolor sit amet.</p>
+                <div class="child-item child-item-3">
+                    <div class="img-img">
+                        <img src="/images/new-3.jpg" class="image-MustSection" alt="">
+                    </div>
+                    <p>Lorem ipsum dolor sit amet.dfd <br> Lorem ipsum dolor sit amet.</p>
+                </div>
+                <div class="child-item child-item-4">
+                    <div class="img-img">
+                        <img src="/images/new-5.jpg" class="image-MustSection" alt="">
+                    </div>
+                    <p>Lorem ipsum dolor sit amet.dfd <br> Lorem ipsum dolor sit amet.</p>
+                </div>
+                <div class="child-item child-item-5">
+                    <div class="img-img">
+                        <img src="/images/new-2.jpg" class="image-MustSection" alt="">
+                    </div>
+                    <p>Lorem ipsum dolor sit amet.dfd <br> Lorem ipsum dolor sit amet.</p>
+                </div>
             </div>
-        </div>
-    </section>
+        </section>
+
+        <section id="business">
+            <h1 class="textTitle-trending business-1">Business</h1>
+            <div class="business-grid">
+                <div class="item-grid business-item-1">
+                    <a href="#">
+                        <img src="/images/new-5.jpg" id="businessImage" alt="">
+                    </a>
+                </div>
+                <div class="item-grid business-item-2">
+                    <a href="#">
+                        <img src="/images/news1.jpg" id="businessImage" alt="">
+                    </a>
+                </div>
+                <div class="item-grid">
+                    <div class="image-item">
+                        <img src="/images/landscape.jpg" class="img-img-item" alt="">
+                    </div>
+                    <div class="paragraph-image">
+                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. tatis deleniti aspernatur quidem qui.
+                        </p>
+                    </div>
+                </div>
+                <div class="item-grid">
+                    <div class="image-item">
+                        <img src="/images/new-1.jpg" class="img-img-item" alt="">
+                    </div>
+                    <div class="paragraph-image">
+                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. tatis deleniti aspernatur quidem qui.
+                        </p>
+                    </div>
+                </div>
+                <div class="item-grid">
+                    <div class="image-item">
+                        <img src="/images/new-3.jpg" class="img-img-item" alt="">
+                    </div>
+                    <div class="paragraph-image">
+                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. tatis deleniti aspernatur quidem qui.>Lorem ipsum dolor sit, amet consectetur adipisicing elit. tatis deleniti aspernatur quidem qui.
+                        </p>
+                    </div>
+                </div>
+                <div class="item-grid">
+                    <div class="image-item">
+                        <img src="/images/new-5.jpg" class="img-img-item" alt="">
+                    </div>
+                    <div class="paragraph-image">
+                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. tatis deleniti aspernatur quidem qui.>Lorem ipsum dolor sit, amet consectetur adipisicing elit. tatis deleniti aspernatur quidem qui.
+                        </p>
+                    </div>
+                </div>
+                <div class="item-grid">
+                    <div class="image-item">
+                        <img src="/images/new4.jpg" class="img-img-item" alt="">
+                    </div>
+                    <div class="paragraph-image">
+                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. tatis deleniti aspernatur quidem qui.>Lorem ipsum dolor sit, amet consectetur adipisicing elit. tatis deleniti aspernatur quidem qui.
+                        </p>
+                    </div>
+                </div>
+                <div class="item-grid">
+                    <div class="image-item">
+                        <img src="/images/new-2.jpg" class="img-img-item" alt="">
+                    </div>
+                    <div class="paragraph-image">
+                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. tatis deleniti aspernatur quidem qui.>Lorem ipsum dolor sit, amet consectetur adipisicing elit. tatis deleniti aspernatur quidem qui.
+                        </p>
+                    </div>
+                </div>
+                <div class="item-grid">
+                    <div class="image-item">
+                        <img src="/images/news3.jpg" class="img-img-item" alt="">
+                    </div>
+                    <div class="paragraph-image">
+                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. tatis deleniti aspernatur quidem qui.>Lorem ipsum dolor sit, amet consectetur adipisicing elit. tatis deleniti aspernatur quidem qui.
+                        </p>
+                    </div>
+                </div>
+                <div class="item-grid">
+                    <div class="image-item">
+                        <img src="/images/news2.jpg" class="img-img-item" alt="">
+
+                    </div>
+                    <div class="paragraph-image">
+                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. tatis deleniti aspernatur quidem qui. >Lorem ipsum dolor sit, amet consectetur adipisicing elit. tatis deleniti aspernatur quidem qui.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
 
     <!-- for footer section -->
     <footer class="footer-section">
