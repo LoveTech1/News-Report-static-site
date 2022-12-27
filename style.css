@@ -594,6 +594,10 @@ i.fa-sharp.fa-solid.fa-bars.burger-img {
     /* border: 2px solid brown; */
 }
 
+.logos {
+    display: flex;
+}
+
 
 /* end of the business section */
 
